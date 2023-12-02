@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Симплекс метод</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+
+	</head>
+	<body>
+	<div id="page">
+			<div class="equation expression">
+				<span class="right_side">
+				<i>F</i> = </span>
+				<span class="left_side">
+					<input type="text" value ="0" /><i>x</i><sub>1</sub> +
+					<input type="text" value ="0" /><i>x</i><sub>2</sub>
+				</span>
+				<span class="right_side">
+					<a href="#" class="add_x"> + </a>
+				</span>
+				<span> &#8594;</span>
+				<select class="minmax" name="type_of_work">
+					<option value="-1"> max </option>
+					<option value="1"> min </option>
+				</select>
+			</div>
+
+			<div class="braces">
+				<div class="curly">
+					<div id="limitation_block">
+							<div class="limitation expression">
+								<span class="left_side">
+									<input type="text" value ="0" /><i>x</i><sub>1</sub> +
+									<input type="text" value ="0" /><i>x</i><sub>2</sub>
+								</span>
+								<span class="right_side">
+<!--									<a href="#" class="add_x"> + </a>-->
+									<select>
+										<option value="1"> ≤ </option>
+										<option value="-1"> ≥ </option>
+									</select>
+									<input type="text" value ="0" />
+								</span>
+							</div>
+							<div class="limitation expression">
+								<span class="left_side">
+									<input type="text" value ="0" /><i>x</i><sub>1</sub> +
+									<input type="text" value ="0" /><i>x</i><sub>2</sub>
+								</span>
+								<span class="right_side">
+									<select>
+										<option value="1"> ≤ </option>
+										<option value="-1"> ≥ </option>
+									</select>
+									<input type="text" value ="0" />
+								</span>
+						</div>
+					</div>
+					<div class="limitation_add">
+						<a href="#"> + </a>
+					</div>
+				</div>
+			</div>
+		<br>
+		<div class="batton">
+			<div class="submit">
+				<a style="color: white" href="#">Обрахувати</a>
+			</div>
+		</div>
+			<div id="result">
+			</div>
+		</div>
+	</body>
+</html>	
